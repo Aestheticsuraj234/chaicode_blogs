@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use('/api', (await import('./routes/user.routes.js')).default);
 
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
